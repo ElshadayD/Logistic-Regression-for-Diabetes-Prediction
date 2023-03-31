@@ -47,7 +47,7 @@ def main():
     alpha = 0.0001
     iterations = 10000
     pediction = sigmoid(np.dot(X, w)+b)
-    print("Initial cost value for w values {0} is: {1}".format(w, compute_cost(pediction,y)))
+     print("Initial cost value for w and b values {0} and {1}is: {2}".format(w, b,compute_cost(prediction,y)))
 
     w, b,cost_num = gradient_descent(X, y, w,b, alpha, iterations)
 
